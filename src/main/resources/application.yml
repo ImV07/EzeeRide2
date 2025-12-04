@@ -1,0 +1,33 @@
+#spring:
+#
+#  application:
+#    name: EzeeRide2
+#
+#  datasource:
+#    url: ${DB_URL}
+#    username: ${DB_USERNAME}
+#    password: ${DB_PASSWORD}
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#
+#  jackson:
+#    mapper:
+#      accept-case-insensitive-enums: true
+#
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: ${SMTP_USERNAME}
+#    password: ${SMTP_PASSWORD}
+#    properties:
+#      mail.smtp.auth: true
+#      mail.smtp.starttls.enable: true
+#
+#  activemq:
+#    broker-url: tcp://localhost:61616
+#    user: admin
+#    password: admin

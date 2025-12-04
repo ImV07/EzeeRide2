@@ -54,7 +54,7 @@ public class CustomerService {
 			newCustomer.setPassword(encodedPassword);
 			newCustomer.setRole(Role.USER);
 			customerRepo.save(newCustomer);
-		} 
+		}
 		catch (Exception e) {
 			throw new BadRequestException("check EmailFormat/Contact No.{10}");
 		}
@@ -157,9 +157,9 @@ public class CustomerService {
 			admin.setEmail(Email);
 			admin.setPassword("admin1");
 			createAdmin(admin);
-			System.out.println("Admin created...");
-		} else {
-			System.out.println("Admin is present...");
+            logger.info("Admin created...");
+        } else {
+            logger.info("Admin present...");
 		}
 
 	}
